@@ -13,6 +13,10 @@ namespace Laboratory7
         {
             this.shipping = shipping;
         }
+        public void SetCalculationMethod(IShippingStrategy shipping)
+        {
+            this.shipping = shipping;
+        }
         public double CalculateShipping(double distance, double weight)
         {
             if (distance < 0 || weight < 0)
